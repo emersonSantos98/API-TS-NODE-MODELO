@@ -1,9 +1,8 @@
 // @ts-ignore
 import express from "express";
-
-
 import {router} from "../routes";
 
+import '../shared/services/translationYup'
 
 export class Server {
   public server: express.Application;
