@@ -2,17 +2,19 @@
   "name": "API-TS-NODE-MODELO",
   "version": "1.0.0",
   "description": "Apenas uma api modelo para inicio de futuros Projetos",
-  "main": "app.js",
+  "main": "index.js",
   "repository": "https://github.com/emersonSantos98/API-TS-NODE-MODELO.git",
   "author": "Emerson Santos",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "dotenv": "^16.4.0",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "http-status-codes": "^2.3.0",
+    "nodemon": "^3.0.3"
   },
   "scripts": {
-    "dev": "ts-node-dev ./src/server/index.ts"
+    "start": "nodemon --exec ts-node-dev ./src/server/index.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
