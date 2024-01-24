@@ -1,8 +1,10 @@
 import {Router} from 'express'
-import {StatusCodes} from "http-status-codes";
+import {StatusCodes} from 'http-status-codes';
+import usuario from './usuario.routes';
 const router = Router()
 
 
+router.use('/usuarios', usuario);
 router.get('', (req, res) => {
   res.status(StatusCodes.OK).json({
     success: true,
